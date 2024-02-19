@@ -1,33 +1,459 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.Skilltitle {
+  @apply mb-5;
+}
+.dark .neXt {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+.dark .About {
+  @apply bg-inherit;
+}
+.dark .bg-slate-300 {
+  @apply bg-inherit;
+}
+.dark .bg-slate-900 {
+  @apply bg-slate-800;
+}
+.light .NavLink:hover {
+  text-decoration: none;
+  @apply animate-pulse;
+}
+.dark .NavLink:hover {
+  text-decoration: none;
+  @apply text-slate-400 animate-pulse;
+}
+.light .btnSend:hover {
+  transition: 0.3s ease-out;
+  @apply bg-slate-900;
+}
+.dark .btnSend:hover {
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  @apply text-white bg-slate-700;
+}
+.dark .bg-orange-300 {
+  @apply bg-orange-400;
+}
+.imagePlaceHolder {
+  -webkit-box-shadow: 37px 32px 0px 2px rgba(13, 28, 39, 1);
+  -moz-box-shadow: 37px 32px 0px 2px rgba(13, 28, 39, 1);
+  box-shadow: 37px 32px 0px 2px rgba(13, 28, 39, 1);
+}
+.ScrollIcon {
+  animation: shake 1.5s infinite ease;
+}
+.scrolled {
+  transition: all 0.3s ease-out;
+  @apply bg-gradient-to-tl from-secondary  to-slate-500;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+.Menu {
+  display: none;
+}
+.Projects .ProjectCol .imgHolder {
+  width: 45%;
+}
+#Contact .container .Forms .LogoSvg {
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (min-width: 700px) and (max-width: 1024px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /*Navbar*/
+  .navCont {
+    padding: 0;
+    padding: 20px;
+  }
+  .NavItems {
+    padding-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.3s ease, height 0.5s ease;
+    @apply fixed flex-col  bg-slate-300 top-[71px] w-[100%] h-[0] right-0 left-0;
+  }
+  .dark .NavItems {
+    @apply bg-slate-800;
+  }
+
+  .showNav {
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+  }
+  .Menu {
+    display: flex;
+  }
+  .DesktopDarkModing {
+    visibility: hidden;
+  }
+  .BurgerDarkModing {
+    visibility: visible;
+    margin-left: 90px;
+  }
+  /*Hero*/
+  .bannerCont {
+    padding: 0;
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    height: 100%;
+  }
+  .details {
+    width: 100%;
+    height: 150%;
+    text-align: center;
+  }
+  .details .buttonS {
+    padding-bottom: 35px;
+  }
+  .details .title .text {
+    width: 100%;
+  }
+  .ImageDiv {
+    width: 100%;
+  }
+  .ImageDiv .Invader {
+    max-width: 450px;
+    max-height: 350px;
+    border-top-right-radius: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 65px;
+    transition: all 1s ease;
+  }
+  /*About me*/
+  #aboutsection {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  #aboutsection .container {
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #aboutsection .container .aboutText {
+    width: 100%;
+    padding: 0px 45px;
+  }
+  #aboutsection .container .aboutText .Title {
+    text-align: center;
+  }
+  #aboutsection .container .aboutText .Tabs {
+    width: 80%;
+    font-size: 0.65rem;
+  }
+  #aboutsection .container .imagePlaceHolder {
+    min-width: 450px;
+    max-height: 400px;
+    box-shadow: 5px 5px 0px 0px;
+    border-radius: 10%;
+    margin-bottom: 40px;
+    transition: 1s ease;
+  }
+  #aboutsection .Logos {
+    padding: 25px;
+    @apply grid grid-cols-4 gap-1 w-[60%];
+  }
+  #aboutsection .Logos div {
+    display: block;
+    margin: auto;
+  }
+  #aboutsection .Cards {
+    padding: 0;
+    margin: 0;
+  }
+  /*Project*/
+
+  .Projects {
+    padding: 0;
+    margin: 0;
+    padding: 0px 45px;
+    height: 100%;
+  }
+  .Projects .ProjectCol .ProjectGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .Projects .ProjectCol .ProjectGroup .imgHolder {
+    min-width: 600px;
+  }
+
+  /*Contact*/
+  #Contact {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 45px;
+  }
+  #Contact .container {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+  #Contact .container .Text {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  #Contact .container .Text h1 {
+    text-align: center;
+  }
+  #Contact .container .Text .Icons {
+    justify-content: center;
+  }
+  #Contact .container .Forms {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .navCont {
+    padding: 0;
+    padding: 20px;
+  }
+  .NavItems {
+    padding-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.3s ease, height 0.5s ease;
+    @apply fixed flex-col  bg-slate-300 top-[71px] w-[100%] h-[0] right-0 left-0;
+  }
+  .dark .NavItems {
+    @apply bg-slate-800;
+  }
+
+  .showNav {
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+  }
+  .Menu {
+    display: flex;
+  }
+  .DesktopDarkModing {
+    visibility: hidden;
+  }
+  .BurgerDarkModing {
+    visibility: visible;
+    margin-left: 90px;
+  }
+  /*Hero*/
+  .bannerCont {
+    padding: 0;
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+  #home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    height: 100%;
+  }
+  .details {
+    width: 100%;
+    height: 150%;
+    text-align: center;
+  }
+  .details .buttonS {
+    padding-bottom: 20px;
+  }
+  .details .title .text {
+    width: 100%;
+  }
+  .ImageDiv {
+    width: 100%;
+  }
+  .ImageDiv .Invader {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 55px;
+    transition: all 2s ease;
+  }
+  /*About me*/
+  #aboutsection {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  #aboutsection .container {
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #aboutsection .container .aboutText {
+    width: 100%;
+    padding: 25px;
+  }
+  #aboutsection .container .aboutText .Title {
+    text-align: center;
+  }
+  #aboutsection .container .aboutText .Tabs {
+    width: 80%;
+    font-size: 0.65rem;
+  }
+  #aboutsection .container .imagePlaceHolder {
+    min-width: 70%;
+    min-height: 400px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+  #aboutsection .Logos {
+    padding: 25px;
+    @apply grid grid-cols-4 gap-1;
+  }
+  #aboutsection .Logos div {
+    display: block;
+    margin: auto;
+  }
+  #aboutsection .Cards {
+    padding: 0;
+    margin: 0;
+  }
+  /*Project*/
+  .Projects {
+    padding: 0;
+    margin: 0;
+    padding: 0px 25px;
+    height: 100%;
+  }
+  .Projects .ProjectCol .ProjectGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .Projects .ProjectCol .ProjectGroup .imgHolder {
+    min-width: 100%;
+    min-height: 300px;
+    border-radius: 0;
+    @apply rounded-t-3xl;
+  }
+
+  /*Contact*/
+  #Contact {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 25px;
+  }
+  #Contact .container {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+  #Contact .container .Text {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  #Contact .container .Text h1 {
+    text-align: center;
+  }
+  #Contact .container .Text .Icons {
+    justify-content: center;
+  }
+  #Contact .container .Forms {
+    width: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
