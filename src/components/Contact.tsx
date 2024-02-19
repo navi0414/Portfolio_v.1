@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="container flex justify-between">
         <div className="Text w-[40%]">
           <h1 className={`text-orange-500 text-3xl mb-3 ${Ps2.className}`}>
-            Let's Connect
+            Let&apos;s Connect
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
