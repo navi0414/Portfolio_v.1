@@ -53,11 +53,11 @@ const About = () => {
             <span className="text-orange-500">About</span> Me
           </h1>
           <p className="mb-6">
-            Hi there! I'm <span className=" text-orange-500">Ivan</span>, a
+            Hi there! I&apos;m <span className=" text-orange-500">Ivan</span>, a
             passionate <span className=" text-orange-500">Frontend </span>
             Developer dedicated to bringing ideas to life through design. With a
             keen eye for detail and a love for creativity, I thrive on turning
-            concepts into captivating visuals. Let's collaborate and make
+            concepts into captivating visuals. Let&apos;s collaborate and make
             something amazing together!
           </p>
           <div>

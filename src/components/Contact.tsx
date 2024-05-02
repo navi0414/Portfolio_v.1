@@ -19,9 +19,10 @@ const Contact = () => {
             Let&apos;s Connect
           </h1>
           <p>
-            Ready to bring your vision to life? Let's connect! Whether you have
-            a project in mind or just want to say hello, I'd love to hear from
-            you. Drop me a line and let's start making magic together.
+            Ready to bring your vision to life? Let&apos;s connect! Whether you
+            have a project in mind or just want to say hello, I&apos;d love to
+            hear from you. Drop me a line and let&apos;s start making magic
+            together.
           </p>
           <div className="Icons text-[40px] flex mt-4">
             <FaGithub className="mr-4" /> <FaLinkedin />
