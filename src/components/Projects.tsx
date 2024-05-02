@@ -6,12 +6,12 @@ import ProjectGroups from "./ProjectGroups";
 const Projects = () => {
   return (
     <div
-      className={`Projects px-40 pb-32 h-[100%] w-[100%] bg-slate-300 ${Ps2.className} `}
+      className={`Projects px-40 pb-32 h-[100%] w-[100%] bg-slate-300 ${Ps2.className} rounded-sm`}
     >
       <div
         className={`text-center pt-28 pb-8 text-3xl font-semibold tracking-wide `}
       >
-        My Projects
+        My <span className="text-orange-500">Projects</span>
       </div>
 
       <ProjectGroups />

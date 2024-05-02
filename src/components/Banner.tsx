@@ -36,10 +36,9 @@ const Banner = () => {
           </span>
           <div className="text w-4/5 my-6">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cum
-              rem accusamus saepe a maiores accusantium deserunt quas veritatis
-              corporis fuga quae quisquam, doloribus molestiae neque sequi
-              mollitia iusto commodi!
+              Discover creativity at its finest. Dive into a collection of my
+              best work, meticulously crafted to inspire and engage. Welcome to
+              a world of design, innovation, and endless possibilities.
             </p>
           </div>
         </div>

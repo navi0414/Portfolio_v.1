@@ -15,6 +15,7 @@ import react from "@/pages/assets/react.png";
 import next from "@/pages/assets/next.png";
 import aboutPic2 from "@/pages/assets/aboutPic2.jpg";
 import { motion, useInView } from "framer-motion";
+import { Span } from "next/dist/trace";
 
 const About = () => {
   const ref = useRef(null);
@@ -52,10 +53,12 @@ const About = () => {
             <span className="text-orange-500">About</span> Me
           </h1>
           <p className="mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ab
-            nemo perspiciatis, voluptas aliquid dolorum, nisi corporis suscipit
-            ea neque provident ex quibusdam labore officia itaque minus
-            blanditiis laboriosam hic. lore
+            Hi there! I'm <span className=" text-orange-500">Ivan</span>, a
+            passionate <span className=" text-orange-500">Frontend </span>
+            Developer dedicated to bringing ideas to life through design. With a
+            keen eye for detail and a love for creativity, I thrive on turning
+            concepts into captivating visuals. Let's collaborate and make
+            something amazing together!
           </p>
           <div>
             <Tabs defaultValue="skills">

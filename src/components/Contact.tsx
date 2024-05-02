@@ -19,10 +19,9 @@ const Contact = () => {
             Let&apos;s Connect
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
-            quam, rem a delectus dolor accusamus minima quis nulla totam nobis
-            recusandae veritatis officiis deserunt quisquam similique tempore
-            perferendis quia maiores.
+            Ready to bring your vision to life? Let's connect! Whether you have
+            a project in mind or just want to say hello, I'd love to hear from
+            you. Drop me a line and let's start making magic together.
           </p>
           <div className="Icons text-[40px] flex mt-4">
             <FaGithub className="mr-4" /> <FaLinkedin />
