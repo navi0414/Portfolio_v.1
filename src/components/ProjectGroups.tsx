@@ -47,7 +47,7 @@ const ProjectGroups = () => {
             </Fade>
           </div>
         </div>
-        <div className="ProjectGroup flex flex-row-reverse items-center justify-between my-16 mb-20 h-[100%]">
+        {/* <div className="ProjectGroup flex flex-row-reverse items-center justify-between my-16 mb-20 h-[100%]">
           <Fade
             className="imgHolder min-h-[400px] min-w-[400px] rounded-t-sm overflow-hidden flex p-8 bg-orange-300"
             direction="left"
@@ -115,7 +115,7 @@ const ProjectGroups = () => {
               </div>
             </Fade>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

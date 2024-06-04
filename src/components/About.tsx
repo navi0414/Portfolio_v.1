@@ -13,7 +13,7 @@ import javascript from "@/pages/assets/javascript.png";
 import typescript from "@/pages/assets/typescript.png";
 import react from "@/pages/assets/react.png";
 import next from "@/pages/assets/next.png";
-import aboutPic2 from "@/pages/assets/aboutPic2.jpg";
+import aboutPic2 from "@/pages/assets/2.png";
 import { motion, useInView } from "framer-motion";
 import { Span } from "next/dist/trace";
 
@@ -39,7 +39,7 @@ const About = () => {
       id="aboutsection"
     >
       <div className="container flex justify-between items-center">
-        <div className="imagePlaceHolder flex justify-center items bg-slate-400 h-[500px] w-[25%] rounded-tl-[10%] rounded-br-[10%] overflow-hidden">
+        <div className="imagePlaceHolder flex justify-center items bg-slate-400 h-[500px] w-[27%] rounded-tl-[10%] rounded-br-[10%] overflow-hidden">
           <Image
             src={aboutPic2}
             alt="navi"

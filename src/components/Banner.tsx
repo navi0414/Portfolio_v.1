@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "./ui/badge";
-import galaxy from "../pages/assets/IvanP.png";
+import myImage from "../pages/assets/Ivan Soliman.png";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import TypeWriter from "./ui/TypeWriter";
@@ -59,10 +59,10 @@ const Banner = () => {
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
         className="w-[37%] ImageDiv"
       >
-        <div className="bg-slate-900 flex justify-center text-secondary  rounded-[15%] Invader max-h-[500px]">
+        <div className="bg-slate-900 flex justify-center text-secondary  rounded-[100%] Invader max-h-[500px]">
           <Image
-            className=" w-[100%] h-[100%]  rounded-[20%]"
-            src={galaxy}
+            className=" w-[100%] h-[100%]  rounded-[10%]"
+            src={myImage}
             alt="asds"
           ></Image>
         </div>
